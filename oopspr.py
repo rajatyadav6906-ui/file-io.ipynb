@@ -1,7 +1,7 @@
 class FitnessTracker:
     
     def __init__(self):
-        # list to store all activities
+        
         self.activities = []
 
     def log_activity(self, activity_type, duration, calories):
@@ -69,7 +69,7 @@ class FitnessTracker:
             print("No data available.")
             return
 
-        # count activity types
+        
         activity_count = {}
 
         for act in self.activities:
@@ -82,7 +82,7 @@ class FitnessTracker:
         for key, value in activity_count.items():
             print(key, ":", value)
 
-        # also call metrics inside report
+        
         self.calculate_metrics()
 
 
